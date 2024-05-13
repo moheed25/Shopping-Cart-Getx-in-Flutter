@@ -1,3 +1,5 @@
+import 'package:cart/responsivenss/layout_builder.dart';
+import 'package:cart/responsivenss/orientation_builder.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,13 +17,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Shopping Cart Management'),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: MyResponsivenss2(title: 'My Responsivness')
+        //  MyResponsivenss1(
+        //   title: 'My Responsivness',
+        // )
+        //const MyHomePage(title: 'Flutter Shopping Cart Management'),
+        );
   }
 }
 
